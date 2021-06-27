@@ -1,0 +1,19 @@
+ // Appel API pour récup température en JSON
+                $errmsg = null;
+                $ch = curl_init();
+                $options = array(
+                    CURLOPT_URL             => 'http://172.25.0.60/xml/json.php?mode=all',
+                    CURLOPT_HEADER          => 0,
+                    CURLOPT_HTTP_VERSION    => CURL_HTTP_VERSION_1_1,
+                    CURLOPT_RETURNTRANSFER  => true
+                );
+                
+                curl_setopt_array($ch, $options);
+                $response = json_decode(curl_exec($ch));
+                if (curl_errno($ch) != 0) {
+                    $errmsg = curl_error($ch);
+                }
+                curl_close($ch);
+                
+                echo "Il fait actuellement ".$response[1]->value." ".$response[1]->info->unit;
+                var_dump($response);

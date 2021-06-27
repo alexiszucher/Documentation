@@ -1,0 +1,4 @@
+            ssh root@|server-ip|
+
+            example : ssh root@175.60.0.25
+        

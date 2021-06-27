@@ -1,0 +1,4 @@
+      // Si les deux chaînes sont identiques
+            if (strcmp($str, $str2) === 0) {
+                // Let's Go !
+            }

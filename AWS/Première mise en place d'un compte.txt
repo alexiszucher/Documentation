@@ -1,0 +1,4 @@
+-> S'inscire
+-> Aller dans la catégorie EC2
+-> Aller dans Instance - Lancer une instance
+-> Choisir la machine que l'on veut et lancer

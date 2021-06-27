@@ -1,0 +1,4 @@
+            ssh-keygen -t rsa -C alexiszucher -b 2048
+
+            Le jeu de clés est stocké dans un dossier .ssh (/home/alexis/.ssh)
+        

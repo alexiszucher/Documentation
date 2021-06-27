@@ -1,0 +1,2 @@
+  $bdd = new PDO('mysql:host=localhost;dbname=alexis1099_trade', 'root', '');
+        

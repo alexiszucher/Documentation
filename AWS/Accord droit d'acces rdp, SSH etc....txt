@@ -1,0 +1,5 @@
+-> Aller sur l'une des instances du compte AWS
+-> Aller dans Groupe de sécurité
+-> Cliquer sur l'un des groupe
+-> Faites modifier les règles
+-> Ajouter les règles RDP , SSH que vous voulez

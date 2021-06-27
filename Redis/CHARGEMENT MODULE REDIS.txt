@@ -1,0 +1,7 @@
+            -> Si c'est un repo git, clonez
+            -> Allez dans le dossier du repo, puis faites "cargo build --release"
+            -> Un dossier target/release s'est créé dans le repo.
+            -> Aller dans /etc/redis/redis.conf
+            -> Dans la partie Module, ajouter une ligne "loadmodule /home/alexis/ModuleRedis/RedisJSON/target/release/librejson.so"
+            -> Sauvegarder, puis lancer redis en faisant "redis-server /etc/redis/redis.conf"
+        

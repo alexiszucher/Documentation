@@ -1,0 +1,6 @@
+           $request = $bdd->prepare("SELECT * FROM applications WHERE id=:id");
+            $request->bindParam(':id', $_SESSION['id']);
+            $request->execute();
+            while($app = $request->fetch(PDO::FETCH_ASSOC)) {
+                // TODO ! 
+            }
