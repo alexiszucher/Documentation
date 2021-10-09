@@ -1,0 +1,20 @@
+-> Créer un .htaccess dans le dossier public/ :
+
+    <IfModule mod_rewrite.c>
+
+      RewriteEngine On
+      RewriteBase /
+      RewriteRule ^index\.html$ - [L]
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteCond %{REQUEST_FILENAME} !-l
+      RewriteRule . /index.html [L]
+
+    </IfModule>
+ 
+-> Dans package.json, ajouter un attribut :
+    "homepage": "https://report.alexis-zucher.com"
+
+-> Executer la commande "npm run build" a la racine du projet
+
+-> Copier le contenu du dossier build dans votre domaine de production
