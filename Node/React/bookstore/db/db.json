@@ -1,0 +1,81 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry Potter",
+      "author": "J.K Rowling",
+      "resume": "Harry Potter, un jeune orphelin, est élevé par son oncle et sa tante qui le détestent.",
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "title": "La Peste",
+      "author": "CAMUS Albert",
+      "resume": "Une description de La Peste",
+      "stock": 52
+    },
+    {
+      "id": 3,
+      "title": "La faim du Tigre",
+      "author": "CAMUS Albert",
+      "resume": "Une description du livre La faim du Tigre",
+      "stock": 16
+    },
+    {
+      "id": 4,
+      "title": "Le Sang et la Cendre",
+      "author": "Jennifer L. Armentrout",
+      "resume": "Choisie depuis sa naissance pour inaugurer une nouvelle ère de son royaume, la vie de Poppy n'a jamais vraiment été la sienne. Ses parents ont été tués quand elle était jeune et elle vit depuis recluse et surprotégée.",
+      "stock": 21
+    },
+    {
+      "title": "Un titre",
+      "author": "Un auteur",
+      "resume": "Une description",
+      "stock": 5,
+      "id": 5
+    },
+    {
+      "title": "La Belle au bois dormant",
+      "author": "Disney",
+      "resume": "Une description",
+      "stock": 3,
+      "id": 6
+    }
+  ],
+  "authors": [
+    {
+      "lastname": "James",
+      "firstname": "Willing",
+      "id": 1
+    },
+    {
+      "lastname": "Auteur2",
+      "firstname": "PrenomAuteur2",
+      "id": 2
+    },
+    {
+      "lastname": "dssd",
+      "firstname": "sdvs",
+      "id": 3
+    },
+    {
+      "lastname": "dcs",
+      "firstname": "sdc",
+      "id": 4
+    },
+    {
+      "lastname": "zef",
+      "firstname": "fzef",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "toto@toto.fr",
+      "username": "toto",
+      "password": "toto123"
+    }
+  ]
+}
