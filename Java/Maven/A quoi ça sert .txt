@@ -1,0 +1,7 @@
+Maven permet de 
+- compiler un projet facilement, 
+- faire des tests unitaires automatisés
+- Gérer les dépendances du projet
+
+Nous décrivons notre projet dans un fichier XML afin que
+maven puisse compiler notre projet.
