@@ -1,0 +1,26 @@
+-> Crer un projet sur spring initializr avec les dépendances :
+	-> Java persistence API
+	-> Spring web
+	-> Driver MySQL (Ou autre base de données)
+
+-> Dans le fichier resources/application.properties, ajouter le port du serveur web tomcat (Spring boot prend en charge le serveur web)
+	-> server.port=3002
+
+-> Facultatif mais tres bien : Définissez la base url de l'api toujours dans ce même fichier :
+	-> spring.data.rest.basePath=/api  (Ceci va rajouter /api à l'url de base)
+	
+-> Si vous avez défini spring.data.rest.basePath, il faudra rajouter à tous les controller rest le @BasePathAwareController
+	
+-> Puis définissez la connexion à la base de données toujours dans ce même fichier :
+	-> spring.datasource.url = jdbc:mysql://localhost:3306/nomDeLaBdd
+	-> spring.datasource.username = user
+	-> spring.datasource.password = user
+
+-> Créez une première classe en rapport avec la base de données (comme l'image user-class.png)
+
+-> Créez le repository permettant de communiquer entre la classe User et la base de données
+(comme l'image user-repository.png)
+
+-> Créez un service permettant d'appeler le repository (comme l'image user-service.png)
+
+-> Enfin, créez le controller rest permettant de lier des urls aux fonctions du service (comme l'image user-controller.png)

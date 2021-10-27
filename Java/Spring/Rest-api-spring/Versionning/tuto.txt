@@ -1,0 +1,7 @@
+Afin de versionner une api, il existe plusieurs moyens :
+
+-> Mettre la version dans l'url : api/v1/users - api/v2/users
+
+-> Mettre la version dans le header : version: 'v1' - version: 'v2'
+
+

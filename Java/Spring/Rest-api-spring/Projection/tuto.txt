@@ -1,0 +1,2 @@
+Les projections sont les vues permettant d'afficher certains champs d'une ou plusieurs
+classes. Cela permet de ne pas tout afficher lors d'un retour SQL
