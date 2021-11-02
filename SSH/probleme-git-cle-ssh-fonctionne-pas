@@ -1,0 +1,6 @@
+Effectuer ces commandes si git refuse de faire un git push ou pull en raison de la clé ssh non valde.
+
+-> eval $(ssh-agent)
+-> ssh-add /home/azucher/.ssh/id_rsa
+-> git push / pull
+
