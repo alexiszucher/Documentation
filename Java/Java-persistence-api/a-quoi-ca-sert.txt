@@ -1,0 +1,3 @@
+Java persistance api est un bibliothèque permettant de mapper un objet avec une table de la base de données.
+
+Elle permet également de faciliter la communication avec la base en ayant des fonction prédefinis tel que findAll, update(), delete(), create() etc...
