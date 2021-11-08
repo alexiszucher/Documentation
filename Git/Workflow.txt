@@ -1,0 +1,14 @@
+Vos messages de commit doivent être équivalent à : 
+<type_commit>-<numéro_jira>:<message_commit>
+
+Exemple: feat-EMMA-1204: mise en place de la signature electronique
+
+Les <type_commit> possibles (écrit en minuscule) :
+feat: une feature ou une évolution 
+fix: correction d’un bug 
+refactor: revue d’un bout code ne touchant pas le fonctionnel 
+test: ajout de tests 
+docs: ajout de documentation 
+chore: upgrade de version, modification de pom 
+other: d’autres cas
+
