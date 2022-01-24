@@ -43,3 +43,32 @@ En Java :
                 "}"
             )
         );
+        
+        
+En cours de test :
+
+		new MockServerClient("localhost", 1080)
+	    .when(
+	    		HttpRequest.request()
+	            .withPath("/some/path")
+	    )
+	    .respond(
+	    		httpRequest -> {
+	            if (httpRequest.getMethod().getValue().equals("POST")) {
+	                mockServerClient
+	                    .when(
+	                        request()
+	                            .withPath("/some/otherPath")
+	                    )
+	                    .respond(
+	                        response()
+	                            .withBody(httpRequest.getBodyAsString())
+	                    );
+	                return response()
+	                    .withStatusCode(ACCEPTED_202.code())
+	                    .withBody("request processed");
+	            } else {
+	                return notFoundResponse();
+	            }
+	        }
+	    );
