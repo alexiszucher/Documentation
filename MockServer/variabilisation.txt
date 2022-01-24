@@ -22,5 +22,24 @@ En JSON :
     }
   ]
   
-  En Java :
+En Java :
   
+  new MockServerClient("localhost", 1080)
+        .when(
+             HttpRequest.request()
+                .withPath("/some/path")
+        )
+        .respond(
+          HttpTemplate.template(
+                HttpTemplate.TemplateType.JAVASCRIPT,
+                "body = JSON.parse(JSON.stringify(request.body));" + 
+                "return { " + 
+                "	statusCode: 201, " + 
+                "	body: [" + 
+                "		{" + 
+                "       	'updated_date': body.json.updatedDate" + 
+                "   	}" + 
+                "   ]" + 
+                "}"
+            )
+        );
