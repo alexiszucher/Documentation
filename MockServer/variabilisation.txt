@@ -1,0 +1,26 @@
+En JSON : 
+  [
+    {
+      "httpRequest": {
+          "path": "/api/fenix/bob/v1/activation",
+          "method": "POST"
+      },
+      "httpResponseTemplate": {
+          "template": "
+                  body = JSON.parse(JSON.stringify(request.body))
+                  return { 
+                      statusCode: 201, 
+                      body: [
+                          {
+                              'updated_date': body.json.updatedDate
+                          }
+                      ]
+                  }
+          ",
+        "templateType": "JAVASCRIPT"
+      }
+    }
+  ]
+  
+  En Java :
+  
